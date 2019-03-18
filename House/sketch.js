@@ -1,3 +1,8 @@
+/*
+House Assignment
+Created by Zubair Abdalla
+Mar 18 2019
+*/
 function setup() {
   // put setup code here
   createCanvas(800,600);
@@ -6,8 +11,11 @@ function setup() {
 function draw() {
   // variables for house width and height
   let houseWidth=100;
-  let height=50;
-  let scale=1; // The scale value can be changed to make the entire house bigger or smaller. This should be the only variable that needs to be changed.
+  /*
+  The scale value can be changed to make the entire house bigger or smaller
+  This should be the only variable that needs to be changed
+  */
+  let scale=1;
   let x=400;
   let y=300;
 
@@ -20,10 +28,10 @@ function draw() {
   rect(400,600,800,600);
   // Base of the house
   fill(230,242,255);
-  rect(x,y,houseWidth*scale,height*scale);
+  rect(x,y,houseWidth*scale,houseWidth/2*scale);
   // Window of the house
   fill(255,255,255);
-  rect(x-25*scale,y-10*scale,houseWidth*scale/4,height*scale/4);
+  rect(x-25*scale,y-10*scale,houseWidth*scale/4,houseWidth/2*scale/4);
   // Door of the house
   fill(153,102,51);
   rect(x,y+10*scale,houseWidth/8*scale,25*scale);
