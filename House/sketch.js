@@ -16,8 +16,6 @@ function draw() {
   This should be the only variable that needs to be changed
   */
   let scale=1;
-  let x=400;
-  let y=300;
 
   rectMode(CENTER);
   // Sky
@@ -28,15 +26,15 @@ function draw() {
   rect(400,600,800,600);
   // Base of the house
   fill(230,242,255);
-  rect(x,y,houseWidth*scale,houseWidth/2*scale);
+  rect(width/2,height/2,houseWidth*scale,houseWidth/2*scale);
   // Window of the house
   fill(255,255,255);
-  rect(x-25*scale,y-10*scale,houseWidth*scale/4,houseWidth/2*scale/4);
+  rect(width/2-25*scale,height/2-10*scale,houseWidth*scale/4,houseWidth/2*scale/4);
   // Door of the house
   fill(153,102,51);
-  rect(x,y+10*scale,houseWidth/8*scale,25*scale);
+  rect(width/2,height/2+10*scale,houseWidth/8*scale,25*scale);
   // Roof of the house
   fill(0,51,102);
-  triangle(x-50*scale,y-25*scale,x+50*scale,y-25*scale,x,y-50*scale);
+  triangle(width/2-50*scale,height/2-25*scale,width/2+50*scale,height/2-25*scale,width/2,height/2-50*scale);
 
 }
