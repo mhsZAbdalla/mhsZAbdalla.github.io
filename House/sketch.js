@@ -33,6 +33,9 @@ function draw() {
   // Door of the house
   fill(153,102,51);
   rect(width/2,height/2+10*scale,houseWidth/8*scale,25*scale);
+  // Door Knob
+  fill(255,204,0);
+  ellipse(width/2-2*scale,height/2+10*scale,houseWidth/24*scale,houseWidth/24*scale);
   // Roof of the house
   fill(0,51,102);
   triangle(width/2-50*scale,height/2-25*scale,width/2+50*scale,height/2-25*scale,width/2,height/2-50*scale);
