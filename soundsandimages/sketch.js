@@ -28,8 +28,12 @@ function draw() {
   fill(255)
   rectMode(CENTER)
   rect(width/2,height/2,100,100)
-  if (mouseIsPressed) {
-     mySound.play() 
+
+}
+
+function mouseIsClicked() {
+  if (value === 0) {
+     mySound.play
   }
 
 }
