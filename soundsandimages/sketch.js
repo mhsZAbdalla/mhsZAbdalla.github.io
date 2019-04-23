@@ -31,9 +31,9 @@ function draw() {
 
 }
 
-//function keyPressed() {
- // if (value === 0) {
- //   mySound.play()
- // }
+function keyPressed() {
+  if (value === 0) {
+    mySound.play()
+  }
 
-//}
+}
