@@ -3,7 +3,7 @@
 var mySound
 var myImage
 
-//function preload() {
+function preload() {
   mySound = loadSound('laser.mp3')
   myImage = loadImage('space.jpg')
 //}
