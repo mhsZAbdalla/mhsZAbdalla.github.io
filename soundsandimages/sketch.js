@@ -23,6 +23,7 @@ function draw() {
   // put drawing code here
   image(myImage,0,0)
   fill(255)
+  rectMode(CENTER)
   rect(width/2,height/2,100,100)
 
 }
