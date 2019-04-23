@@ -1,5 +1,6 @@
 //Sounds and Images by Zubair Abdalla created April 16 2019
 //Global Variables
+var xvel = 5
 var mySound
 var myImage
 
@@ -13,8 +14,7 @@ function setup() {
   createCanvas(800,600)
   frameRate(60)
   myImage = loadImage('space.jpg')
-  mySound.setVolume(1)
-  mySound.play()
+  mySound.setVolume(0.5)
 
 
 }
@@ -22,4 +22,14 @@ function setup() {
 function draw() {
   // put drawing code here
   image(myImage,0,0)
+  fill(255)
+  rect(width/2,height/2,100,100)
+
+}
+
+function keyPressed() {
+  if (value === 0) {
+    mySound.play()
+  }
+
 }
