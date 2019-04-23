@@ -17,7 +17,7 @@ function setup() {
   frameRate(60)
   myImage = loadImage('space.jpg')
   //mySound.setVolume(0.5)
-  mySound.play()
+
 
 
 }
@@ -28,12 +28,9 @@ function draw() {
   fill(255)
   rectMode(CENTER)
   rect(width/2,height/2,100,100)
-
-}
-
-function keyPressed() {
-  if (value === 0) {
-    mySound.play()
+  if (mouseIsPressed) {
+     mySound.play() 
   }
 
 }
+
