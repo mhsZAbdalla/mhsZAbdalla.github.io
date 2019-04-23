@@ -5,7 +5,9 @@ var mySound
 var myImage
 
 function preload() {
-  mySound = loadSound('laser.mp3')
+  //mySound = loadSound('laser.mp3')
+  mySound = loadSound('http://www.sa-matra.net/sounds/starwars/ISD-Laser2.wav')
+  
   myImage = loadImage('space.jpg')
 }
 
