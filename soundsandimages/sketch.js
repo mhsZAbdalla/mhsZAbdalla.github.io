@@ -1,5 +1,6 @@
 //Sounds and Images by Zubair Abdalla created April 16 2019
 //Global Variables
+var x = 5
 var xvel = 5
 var mySound
 var myImage
@@ -25,9 +26,10 @@ function setup() {
 function draw() {
   // put drawing code here
   image(myImage,0,0)
-  fill(255)
+  fill(255,0,0)
   rectMode(CENTER)
-  rect(width/2,height/2,100,100)
+  rect(x,height/2,100,50)
+  x = x + xvel
 
 }
 
