@@ -6,7 +6,7 @@ var myImage
 function preload() {
   mySound = loadSound('laser.mp3')
   myImage = loadImage('space.jpg')
-//}
+}
 
 function setup() {
   // put setup code here
