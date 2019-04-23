@@ -1,10 +1,10 @@
 //Sounds and Images by Zubair Abdalla created April 16 2019
 //Global Variables
-var sound
+var mySound
 var myImage
 
 //function preload() {
-  sound = loadSound('laser.mp3')
+  mySound = loadSound('laser.mp3')
   myImage = loadImage('space.jpg')
 //}
 
@@ -13,6 +13,8 @@ function setup() {
   createCanvas(800,600)
   frameRate(60)
   myImage = loadImage('space.jpg')
+  mySound.setVolume(1)
+  mySound.play()
 
 
 }
