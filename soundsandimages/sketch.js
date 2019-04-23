@@ -16,7 +16,7 @@ function setup() {
   createCanvas(800,600)
   frameRate(60)
   myImage = loadImage('space.jpg')
-  mySound.setVolume(0.5)
+  //mySound.setVolume(0.5)
   mySound.play()
 
 
