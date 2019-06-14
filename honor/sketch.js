@@ -25,7 +25,6 @@ class Fruit {
     this.falling = false
     this.texture = random([apple,melon,pineapple])
     this.texture.onDeath = random([splatter1,splatter2,splatter3])
-    this.life = 0
     this.gravity = 0.4
   }
   move() {
@@ -34,7 +33,7 @@ class Fruit {
     // Adds gravity to the fruits, as well as random falling speeds
     this.yvel += this.gravity*random(0.75,1)
 
-    if (this.y >= 650 && this.falling === false) {
+    if (this.y <= 750 && this.falling === false) {
       this.yvel *= -1
       this.falling = true
     }
@@ -61,11 +60,8 @@ class Fruit {
       sword.play()
     }
     // Gives the player a 'fruits missed' counter, when this reaches 3, the game ends.
-    if (frameCount % 60 == 0 && this.lifespan === 255) {
-      this.life ++
-    }
     // Instead of detecting when the fruit leaves the canvas, we can use time to guess when it has fell.
-    if (this.life === 2 && this.lifespan === 255) {
+    if (this.y >= 800 && this.lifespan === 255) {
       fruitsMissed ++
       this.lifespan = 0
     }
